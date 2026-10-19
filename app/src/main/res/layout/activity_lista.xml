@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás ..." />
+
+    <EditText
+        android:id="@+id/etBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:hint="Buscar"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/lvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCompartir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Compartir Contacto" />
+
+        <Button
+            android:id="@+id/btnVerImagen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ver Imagen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Eliminar Contacto" />
+
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar Contacto" />
+    </LinearLayout>
+</LinearLayout>
